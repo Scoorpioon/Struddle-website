@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap');
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  box-sizing: content-box;
+  
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+
+:root {
+ --main-color: rgb(24, 184, 104);
+ --main-color-brighter: rgb(25, 209, 117);
+ --primary-black: rgb(23, 23, 23);
+ --secondary-black: rgb(31, 31, 31);
+ --secondary-white: rgb(245, 245, 245);
+  
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 95px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  background-color: var(--primary-black);
+  color: white;
+  
+  box-sizing: border-box;
+}
+
+#header-title {
+  display: flex;
+  padding: 10px 10px;
+  cursor: default;
+  
+}
+
+#header-title span {
+  padding: 12.7px 7px;
+  color: var(--main-color-brighter)
+  
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 17px 15px;
+  font-size: 18px;
+  
+}
+
+nav ul li a {
+  transition: .5s ease-in-out;
+  font-weight: 600;
+  color: white;
+  
+}
+
+nav ul li a:after {
+  content: '';
+  transition: transform .4s;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
+  height: 1px;
+  width: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+  
+}
+
+nav ul li a:hover:after {
+  transform: scaleX(1);
+  
+}
+
+/* Home */
+#home {
+  background: url(https://source.unsplash.com/Z3ownETsdNQ);
+  background-repeat: no-repeat;
+  background-position: 85%;
+  background-size: 550px 480px;
+  width: 100%;
+  min-height: 700px;
+  border-top: 1px solid gray;
+  
+}
+
+#home span {
+  color: var(--main-color);
+  
+}
+
+.home-content {
+  width: 600px;
+  height: 250px;
+  margin: 200px 40px;
+  font-size: 20px;
+}
+
+.home-content p {
+  margin: 20px 0;
+  
+}
+
+.home-content button {
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  padding: 12px 55px;
+  border-radius: 20px;
+  margin-left: 32%;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  
+}
+
+.home-content button:hover {
+  background-color: var(--main-color-brighter);
+  
+}
+
+.linha-1 {
+  margin: 10px 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(72deg, rgba(255,255,255,1) 0%, rgba(176,176,176,1) 100%);
+  
+}
+
+.linha-2 {
+  margin: 10px 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(72deg, rgba(144,144,144,1) 0%, rgba(255,255,255,1) 100%);;
+  
+}
+
+/* Information */
+#information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 600px;
+  align-items: center;
+  
+}
+
+#information h2 {
+  margin-top: 24px;
+  margin-bottom: 120px;
+  font-size: 32px;
+  
+}
+
+.information-content {
+  display: flex;
+  gap: 32px;
+  
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 0px 0px 7px;
+  border-bottom: 5px solid var(--main-color);
+  
+}
+
+.card div {
+  width: 70px;
+  height: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  
+}
+
+/* Footer */
+footer {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  background-color: var(--secondary-black);
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+    
+}
+
+footer h2 {
+  margin-bottom: 10px;
+  
+}
+
+footer span a {
+  transition: 0.3s ease-in-out;
+  
+}
+
+footer span:nth-child(2):hover a {
+  color: var(--main-color);
+  
+}
+
+footer ul {
+  margin-right: 50px;
+  
+}
+
+footer ul li {
+  display: inline;
+  
+}
+
+footer ul li:nth-child(1) a, footer ul li:nth-child(2) a {
+  margin-right: 16px;
+  
+}
+
+footer ul li a {
+  color: white;
+  
+}
+
+/* Desenvolvido por Gabriel A. */

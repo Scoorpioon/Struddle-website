@@ -1,2 +1,2 @@
 # Struddle-website
-A site in HTML &amp; CSS about works.
+📰 Website about works built in pure CSS and HTML!

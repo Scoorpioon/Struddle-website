@@ -4,21 +4,27 @@ window.addEventListener('scroll', function() {
     console.log('It works!')
     backToTopButton.classList.add('show')
 
-  } else {
+  } else if(window.scrollY >= 600) {
+    backToTopButton.style.bottom = "80px"
+
+  } 
+  
+  else {
     backToTopButton.classList.remove('show')
 
   }
 })
 
-const scrollreveal = ScrollReveal({
-  origin: 'top',
-  distance: '30px',
-  duration: 650,
-  reset: true
+window.addEventListener('scroll', function() {
+  const header = document.querySelector('#header')
+  if(window.scrollY >= 150) {
+    console.log('It works!')
+    header.classList.add('shadow')
 
+  } else {
+    header.classList.remove('shadow')
 
+  }
 })
-
-scrollreveal.reveal('#home', {interval: 300})
 
 // Desenvolvido por Gabriel A.

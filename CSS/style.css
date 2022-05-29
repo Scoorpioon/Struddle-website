@@ -140,20 +140,62 @@ nav ul li a:hover:after {
   
 }
 
-.linha-1 {
-  margin: 10px 0;
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(72deg, rgba(255,255,255,1) 0%, rgba(176,176,176,1) 100%);
-  
+.image-decoration::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  right: 1000px;
+  top: 880px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+
+  z-index: -1;
+
 }
 
-.linha-2 {
-  margin: 10px 0;
-  height: 1px;
-  width: 100%;
-  background: linear-gradient(72deg, rgba(144,144,144,1) 0%, rgba(255,255,255,1) 100%);;
-  
+/* About us */
+#aboutus {
+  display: flex;
+  min-height: 720px;
+  padding: 0 300px;
+
+}
+
+.aboutus-content {
+  width: 600px;
+  height: 280px;
+  margin-top: 185px;
+  font-size: 20px;
+
+}
+
+.aboutus-content h2 {
+  font-size: 36px;
+  margin-bottom: 8px;
+
+}
+
+#aboutus img {
+  width: 680px;
+  height: 480px;
+  margin-top: 100px;
+  margin-right: 50px;
+
+  z-index: 1;
+}
+
+.image::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 500px;
+  right: 1000px;
+  top: 880px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+
+  z-index: -1;
 }
 
 /* Information */
@@ -175,18 +217,19 @@ nav ul li a:hover:after {
 
 .information-content {
   display: flex;
-  gap: 32px;
+  gap: 55px;
   
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 320px;
   height: 300px;
+  padding: 12px;
   text-align: center;
   align-items: center;
-  box-shadow: 0px 0px 7px;
+  box-shadow: 0px 0px 6px .1px;
   border-bottom: 5px solid var(--main-color);
   
 }
@@ -196,8 +239,11 @@ nav ul li a:hover:after {
   height: 70px;
   margin-top: 20px;
   margin-bottom: 20px;
-  border: 1px solid black;
+  padding-top: 10px;
+  font-size: 50px;
+  color: var(--main-color);
   
+  box-sizing: border-box;
 }
 
 .card h3 {
@@ -215,6 +261,11 @@ footer {
   justify-content: space-between;
   align-items: center;
     
+}
+
+.footer-title {
+  margin-left: 15px;
+
 }
 
 footer h2 {
@@ -239,6 +290,7 @@ footer ul {
 
 footer ul li {
   display: inline;
+  font-size: 18.5px;
   
 }
 
@@ -247,9 +299,45 @@ footer ul li:nth-child(1) a, footer ul li:nth-child(2) a {
   
 }
 
+footer ul li i {
+  margin-right: 6px;
+
+}
+
 footer ul li a {
+  transition: .3s ease-in-out;
   color: white;
   
+}
+
+footer ul li a:hover {
+  font-size: 20px;
+
+}
+
+/* Aditional content */
+.linha-1 {
+  margin: 10px 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(72deg, rgba(255,255,255,1) 0%, rgba(176,176,176,1) 100%);
+  
+}
+
+.linha-2 {
+  margin: 10px 0;
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(72deg, rgba(144,144,144,1) 0%, rgba(255,255,255,1) 100%);;
+  
+}
+
+@media screen and (max-width: 1879px) {
+  .home-content {
+    margin-left: 250px;
+
+  }
+
 }
 
 /* Desenvolvido por Gabriel A. */

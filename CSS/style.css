@@ -301,6 +301,7 @@ footer ul li:nth-child(1) a, footer ul li:nth-child(2) a {
 
 footer ul li i {
   margin-right: 6px;
+  color: var(--main-color)
 
 }
 
@@ -332,6 +333,38 @@ footer ul li a:hover {
   
 }
 
+.back-to-top {
+  transition: .5s ease-in-out;
+  position: fixed;
+  cursor: pointer;
+  right: -30px;
+  bottom: -50px;
+  background-color: var(--main-color);
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  border: 1px solid var(--main-color);
+  visibility: hidden;
+
+}
+
+.back-to-top i {
+  position: relative;
+  left: 13.5px;
+  top: 14px;
+
+}
+
+.show {
+  visibility: visible;
+  transition: .5s;
+  display: block;
+  right: 30px;
+  bottom: 50px;
+
+}
+
+/* Screens */
 @media screen and (max-width: 1879px) {
   .home-content {
     margin-left: 250px;

@@ -411,6 +411,11 @@ footer ul li a:hover {
     margin-left: 250px;
 
   }
+  
+  .image::before {
+    top: 994px;
+    
+  }
 
 }
 

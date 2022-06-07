@@ -406,6 +406,58 @@ footer ul li a:hover {
 }
 
 /* Screens */
+@media screen and (min-width: 2500px) {
+  .home-content {
+    margin-left: 300px;
+    margin-top: 200px;
+    font-size: 30px;
+    width: 750px;
+    height: 420px;
+
+  }
+
+  .home-content button {
+    margin-left: 36.2%;
+
+  }
+
+  #home {
+    padding-top: 130px;
+    background-size: 880px;
+    background-position: 75%;
+
+  }
+
+  .image::before {
+    top: 1100px;
+    left: 480px;
+    
+  }
+
+  #aboutus {
+    padding-left: 570px;
+
+  }
+
+  .aboutus-content {
+    font-size: 25px;
+    width: 780px;
+
+  }
+
+  .card {
+    width: 450px;
+    height: 350px; 
+    font-size: 20px;
+
+  }
+
+  #information {
+    min-height: 700px;
+
+  }
+}
+
 @media screen and (max-width: 1879px) {
   .home-content {
     margin-left: 250px;

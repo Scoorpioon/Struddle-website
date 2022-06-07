@@ -407,6 +407,22 @@ footer ul li a:hover {
 
 /* Screens */
 @media screen and (min-width: 2500px) {
+  #header {
+    padding: 18px 5px;
+
+  }
+
+  #header-title {
+    font-size: 18px;
+    padding: 10px 5px;
+
+  }
+
+  #header ul li a{
+    font-size: 22px;
+
+  }
+  
   .home-content {
     margin-left: 300px;
     margin-top: 200px;
